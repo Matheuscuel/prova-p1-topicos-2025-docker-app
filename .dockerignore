@@ -1,0 +1,17 @@
+﻿# VCS / SO
+.git
+.gitignore
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules
+npm-debug.log*
+yarn.lock
+
+# Env
+.env
+.env.*.local
+
+# DB data (se criar dump local)
+db/data
