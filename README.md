@@ -79,3 +79,19 @@ Esta é uma aplicação web simples em Node.js/Express que exibe a mensagem **"A
 - [x] Conexão com banco e exibição de dados (`/users`)
 - [x] Passo a passo no **README.md**
 - [ ] Link da imagem no **Docker Hub** (você publica e adiciona ao relatório)
+---
+
+## Status & Imagem Pública
+![CI](https://github.com/Matheuscuel/prova-p1-topicos-2025-docker-app/actions/workflows/docker-ci.yml/badge.svg)
+
+**Docker Hub:** https://hub.docker.com/r/matheuscuel/dockerized-webapp-matheus-cuel
+
+## Rodar via imagem pública (sem Dockerfile/compose)
+``` powershell
+# usa a porta 3000 e lê variáveis do .env local (apenas WEB_PORT é usada pela app)
+docker run --rm -p 3000:3000 --env-file .env matheuscuel/dockerized-webapp-matheus-cuel:latest
+
+# testar (funciona via docker-compose com o Postgres rodando)
+Invoke-RestMethod http://localhost:3000/health
+Invoke-RestMethod http://localhost:3000/users
+```
