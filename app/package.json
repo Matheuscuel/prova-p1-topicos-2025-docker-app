@@ -1,0 +1,15 @@
+{
+  "name": "dockerized-webapp-matheus-cuel",
+  "version": "1.0.0",
+  "description": "Aplicação Dockerizada – Matheus Cuel (Prova P1 Tópicos 2025)",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "pg": "^8.11.3"
+  }
+}
